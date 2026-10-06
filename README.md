@@ -15,3 +15,6 @@ Landing page riservata agli account `@24orebs.com` per creare preventivi dal cat
 
 ## Aggiornare il catalogo
 Modifica `data/catalog.json` (derivato dal foglio Google; la Faculty non è inclusa di proposito).
+
+## landing.html (versione file singolo)
+`node scripts/build-landing.js` rigenera `landing.html`: un solo file HTML autonomo, ospitabile ovunque. Imposta `GOOGLE_CLIENT_ID` in cima allo script. Attenzione: il filtro @24orebs.com avviene nel browser e il catalogo è nel sorgente, quindi è una barriera "di cortesia", non sicurezza.

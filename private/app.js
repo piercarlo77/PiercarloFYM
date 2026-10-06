@@ -193,18 +193,15 @@ function reset() {
 }
 
 let me;
-(async () => {
-  const [meRes, catRes] = await Promise.all([fetch('/api/me'), fetch('/api/catalog')]);
-  if (meRes.status === 401 || catRes.status === 401) return location.reload();
-  me = await meRes.json();
-  catalog = await catRes.json();
+function startApp(user, cat, onLogout) {
+  me = user;
+  catalog = cat;
   $('user').textContent = me.email;
-
-  $('logout').onclick = async () => { await fetch('/api/logout', { method: 'POST' }); location.reload(); };
+  $('logout').onclick = onLogout;
   $('add').onclick = () => { lines.push(defaultLine()); renderLines(); renderPreview(); };
   $('print').onclick = () => window.print();
   $('reset').onclick = () => { if (confirm('Iniziare un nuovo preventivo? I dati attuali andranno persi.')) reset(); };
   $('copy').onclick = async () => { await navigator.clipboard.writeText(summaryText()); $('copy').textContent = 'Copiato ✓'; setTimeout(() => ($('copy').textContent = 'Copia riepilogo'), 1500); };
   for (const id of ['c-company', 'c-contact', 'c-email', 'c-subject', 'notes', 'vat', 'validity']) $(id).addEventListener('input', renderPreview);
   reset();
-})();
+}
