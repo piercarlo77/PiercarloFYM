@@ -1,0 +1,71 @@
+:root {
+  --bg: #f6f7f9; --surface: #fff; --text: #161a22; --muted: #667085; --border: #d9dde5;
+  --accent: #1f4fd8; --accent-text: #fff; --danger: #b42318;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #11141a; --surface: #1a1f28; --text: #eef0f4; --muted: #98a2b3; --border: #2e3541; --accent: #6d8dff; --accent-text: #0c1020; --danger: #f97066; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
+h1, h2, h3 { line-height: 1.2; margin: 0 0 .5em; }
+h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-top: 1.6rem; }
+.muted, .hint { color: var(--muted); }
+.hint { font-size: .85rem; margin: .25rem 0 0; }
+.error { color: var(--danger); }
+.grow { flex: 1; }
+
+/* Login */
+body.login { display: grid; place-items: center; min-height: 100vh; padding: 16px; }
+.login-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 32px; max-width: 460px; width: 100%; }
+.login-card h1 { font-size: 1.6rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; color: var(--muted); margin: 0 0 8px; }
+#gsi { margin-top: 24px; min-height: 44px; }
+
+/* App */
+.topbar { display: flex; align-items: center; gap: 12px; padding: 10px 16px; background: var(--surface); border-bottom: 1px solid var(--border); }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; padding: 16px; max-width: 1400px; margin: 0 auto; }
+@media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+.editor, .preview { min-width: 0; }
+.preview { position: sticky; top: 12px; align-self: start; }
+@media (max-width: 900px) { .preview { position: static; } }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.grid3 { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 10px; margin-top: 10px; }
+@media (max-width: 520px) { .grid2, .grid3 { grid-template-columns: 1fr; } }
+label { display: block; font-size: .85rem; color: var(--muted); }
+input, select, textarea { display: block; width: 100%; margin-top: 4px; padding: 8px 10px; font: inherit; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 8px; }
+input:focus, select:focus, textarea:focus, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.line { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 12px; }
+.line .row { display: flex; gap: 8px; align-items: flex-end; margin-bottom: 10px; }
+.line-meta { margin-top: 8px; font-weight: 600; }
+.line-meta.bad { color: var(--danger); }
+button { font: inherit; padding: 8px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; }
+button.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); font-weight: 600; }
+button.danger { color: var(--danger); }
+button:disabled { opacity: .45; cursor: not-allowed; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+
+/* Documento preventivo */
+.doc { background: #fff; color: #161a22; border: 1px solid var(--border); border-radius: 12px; padding: 28px; font-size: 14px; }
+.doc h1 { font-size: 1.6rem; letter-spacing: .06em; margin: 0; }
+.doc h3 { font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: #667085; margin: 0 0 4px; }
+.doc p { margin: 2px 0; }
+.doc-head { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.doc .right { text-align: right; }
+.doc-client { margin-bottom: 18px; }
+.doc table { width: 100%; border-collapse: collapse; }
+.doc th { text-align: left; font-size: .75rem; text-transform: uppercase; color: #667085; border-bottom: 2px solid #161a22; padding: 6px 4px; }
+.doc td { padding: 6px 4px; border-bottom: 1px solid #e4e7ec; vertical-align: top; }
+.doc .num { text-align: right; white-space: nowrap; }
+.doc .totals { width: 55%; margin: 14px 0 0 auto; }
+.doc .totals td { border: 0; }
+.doc .grand td { border-top: 2px solid #161a22; font-weight: 700; font-size: 1.05rem; }
+.doc-notes { margin-top: 18px; white-space: pre-wrap; }
+.doc-foot { margin-top: 24px !important; font-size: .8rem; color: #667085; }
+
+@media print {
+  body { background: #fff; }
+  .topbar, .editor, .actions { display: none !important; }
+  .layout { display: block; padding: 0; }
+  .preview { position: static; }
+  .doc { border: 0; padding: 0; }
+}

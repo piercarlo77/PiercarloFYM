@@ -1,0 +1,793 @@
+{
+ "meta": {
+  "version": "8.0",
+  "updated": "2026-10-01",
+  "dayHours": 8,
+  "vat": 22
+ },
+ "services": [
+  {
+   "id": "TR00",
+   "cat": "Progettazione",
+   "name": "Progettazione Interventi Personalizzati (analisi, micro, materia...)",
+   "areas": [
+    "Progettazione"
+   ],
+   "modes": [],
+   "custom": {
+    "min": 1000,
+    "max": 5000,
+    "note": "in base a monte ore e complessità"
+   }
+  },
+  {
+   "id": "TB01",
+   "cat": "Team Building",
+   "name": "TEAM BUILDING ESPERIENZIALE",
+   "areas": [
+    "Team Building"
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor"
+   ],
+   "minH": 4,
+   "maxH": 24,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   },
+   "formats": [
+    {
+     "name": "TB - CULTURA del FEEDBACK IN CAMMINO",
+     "modes": [
+      "road"
+     ],
+     "minH": 4,
+     "maxH": 24
+    },
+    {
+     "name": "TB - CULTURA dell'ERRORE IN CAMMINO",
+     "modes": [
+      "road"
+     ],
+     "minH": 4,
+     "maxH": 24
+    },
+    {
+     "name": "TB - PHOTOCLICK (con fotografo professionista)",
+     "modes": [
+      "indoor",
+      "outdoor",
+      "road"
+     ],
+     "minH": 4,
+     "maxH": 24
+    },
+    {
+     "name": "TB - VIDEO TEAM BUILDING (con video maker professionista)",
+     "modes": [
+      "indoor",
+      "outdoor",
+      "road"
+     ],
+     "minH": 4,
+     "maxH": 8
+    },
+    {
+     "name": "TB - NEW OFFICE",
+     "modes": [
+      "indoor"
+     ],
+     "minH": 4,
+     "maxH": 8
+    },
+    {
+     "name": "TB - INDOOR TEAM BUILDING (varie attività e contenuti educational)",
+     "modes": [
+      "indoor"
+     ],
+     "minH": 4,
+     "maxH": 16
+    },
+    {
+     "name": "TB - OUTDOOR TEAM BUILDING (varie attività e contenuti educational)",
+     "modes": [
+      "indoor"
+     ],
+     "minH": 4,
+     "maxH": 16
+    },
+    {
+     "name": "TB - TEAM WALKING (varie tematiche educational)",
+     "modes": [
+      "indoor"
+     ],
+     "minH": 4,
+     "maxH": 24
+    },
+    {
+     "name": "TB - SOCIAL TEAM BUILDING",
+     "modes": [
+      "online",
+      "indoor"
+     ],
+     "minH": 4,
+     "maxH": 16
+    },
+    {
+     "name": "TB - DIGITAL TEAM BUILDING (varie attività e contenuti educational)",
+     "modes": [
+      "online"
+     ],
+     "minH": 4,
+     "maxH": 16
+    },
+    {
+     "name": "EXECUTIVE RETREAT (residenziale con facilitazione)",
+     "modes": [
+      "indoor",
+      "outdoor",
+      "road"
+     ],
+     "minH": 8,
+     "maxH": 32
+    },
+    {
+     "name": "TEAM RETREAT (residenziale con facilitazione)",
+     "modes": [
+      "indoor",
+      "outdoor",
+      "road"
+     ],
+     "minH": 8,
+     "maxH": 32
+    }
+   ]
+  },
+  {
+   "id": "TB02",
+   "cat": "Team Building",
+   "name": "TEAM WALKING - Team Building IN CAMMINO (esclusiva FYM)",
+   "areas": [
+    "Team Building"
+   ],
+   "modes": [
+    "road"
+   ],
+   "minH": 4,
+   "maxH": 24,
+   "rates": {
+    "senior": 175,
+    "master": 250
+   },
+   "note": "Esclusiva FYM"
+  },
+  {
+   "id": "TR01",
+   "cat": "Formazione",
+   "name": "COMUNICAZIONE NON VERBALE e LINGUAGGIO del CORPO",
+   "areas": [
+    "Comunicazione"
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 32,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR02",
+   "cat": "Formazione",
+   "name": "COMUNICAZIONE PERSUASIVA",
+   "areas": [
+    "Comunicazione"
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor"
+   ],
+   "minH": 4,
+   "maxH": 16,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR03",
+   "cat": "Formazione",
+   "name": "SCRIVERE EMAIL di LAVORO",
+   "areas": [
+    "Comunicazione"
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 16,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR04",
+   "cat": "Formazione",
+   "name": "SPS - SPEECH PROJECT SYSTEM (progettare discorsi)",
+   "areas": [
+    "Comunicazione"
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 8,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR05",
+   "cat": "Formazione",
+   "name": "VIDEO PUBLIC SPEAKING",
+   "areas": [
+    "Comunicazione"
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 32,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR06",
+   "cat": "Formazione",
+   "name": "CLIENTI DIFFICILI e GESTIONE RECLAMI",
+   "areas": [
+    "Comunicazione",
+    "Efficacia Pers."
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 16,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR07",
+   "cat": "Formazione",
+   "name": "COMUNICAZIONE STRATEGICA",
+   "areas": [
+    "Comunicazione",
+    "Efficacia Pers."
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 32,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR08",
+   "cat": "Formazione",
+   "name": "PUBLIC SPEAKING",
+   "areas": [
+    "Comunicazione",
+    "Efficacia Pers."
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 32,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR09",
+   "cat": "Formazione",
+   "name": "CONVERSAZIONI DIFFICILI",
+   "areas": [
+    "Comunicazione",
+    "Management"
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor",
+    "road"
+   ],
+   "minH": 4,
+   "maxH": 16,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR10",
+   "cat": "Formazione",
+   "name": "CULTURA del FEEDBACK",
+   "areas": [
+    "Comunicazione",
+    "Management",
+    "Organizzazione",
+    "Efficacia Pers."
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor",
+    "road"
+   ],
+   "minH": 4,
+   "maxH": 16,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR11",
+   "cat": "Formazione",
+   "name": "CULTURA dell'ERRORE",
+   "areas": [
+    "Comunicazione",
+    "Management",
+    "Organizzazione",
+    "Efficacia Pers."
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor",
+    "road"
+   ],
+   "minH": 4,
+   "maxH": 16,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR12",
+   "cat": "Formazione",
+   "name": "CONFLICT MANAGEMENT",
+   "areas": [
+    "Comunicazione",
+    "Organizzazione"
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor",
+    "road"
+   ],
+   "minH": 4,
+   "maxH": 16,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR13",
+   "cat": "Formazione",
+   "name": "CUSTOMER CARING: la cura del cliente",
+   "areas": [
+    "Comunicazione",
+    "Sales Skills"
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 16,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR14",
+   "cat": "Formazione",
+   "name": "NETWORKING STRATEGICO",
+   "areas": [
+    "Comunicazione",
+    "Sales Skills"
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor",
+    "road"
+   ],
+   "minH": 4,
+   "maxH": 8,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR15",
+   "cat": "Formazione",
+   "name": "TIME MANAGEMENT",
+   "areas": [
+    "Efficacia Pers."
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 8,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR16",
+   "cat": "Formazione",
+   "name": "STRESS MANAGEMENT",
+   "areas": [
+    "Efficacia Pers."
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor",
+    "road"
+   ],
+   "minH": 4,
+   "maxH": 16,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR17",
+   "cat": "Formazione",
+   "name": "EQUILIBRIO EMOTIVO",
+   "areas": [
+    "Efficacia Pers.",
+    "Management"
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor",
+    "road"
+   ],
+   "minH": 4,
+   "maxH": 16,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR18",
+   "cat": "Formazione",
+   "name": "INTELLIGENZA EMOTIVA",
+   "areas": [
+    "Efficacia Pers.",
+    "Management"
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor",
+    "road"
+   ],
+   "minH": 4,
+   "maxH": 16,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR19",
+   "cat": "Formazione",
+   "name": "DELEGA STRATEGICA",
+   "areas": [
+    "Efficacia Pers.",
+    "Management",
+    "Organizzazione"
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 8,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR20",
+   "cat": "Formazione",
+   "name": "NAVIGARE la COMPLESSITÀ",
+   "areas": [
+    "Efficacia Pers.",
+    "Management",
+    "Organizzazione"
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor",
+    "road"
+   ],
+   "minH": 4,
+   "maxH": 8,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR21",
+   "cat": "Formazione",
+   "name": "DECISION MAKING STRATEGICO",
+   "areas": [
+    "Efficacia Pers.",
+    "Organizzazione"
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor",
+    "road"
+   ],
+   "minH": 4,
+   "maxH": 8,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR22",
+   "cat": "Formazione",
+   "name": "PROBLEM SOLVING",
+   "areas": [
+    "Efficacia Pers.",
+    "Organizzazione"
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor",
+    "road"
+   ],
+   "minH": 4,
+   "maxH": 32,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR23",
+   "cat": "Formazione",
+   "name": "Da COLLEGA a MANAGER",
+   "areas": [
+    "Management"
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 16,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR24",
+   "cat": "Formazione",
+   "name": "L'arte della PIANIFICAZIONE STRATEGICA",
+   "areas": [
+    "Management",
+    "Efficacia Pers."
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 16,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR25",
+   "cat": "Formazione",
+   "name": "Tecniche di COACHING",
+   "areas": [
+    "Management",
+    "Efficacia Pers."
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 16,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR26",
+   "cat": "Formazione",
+   "name": "CHANGE MANAGEMENT",
+   "areas": [
+    "Management",
+    "Organizzazione"
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor",
+    "road"
+   ],
+   "minH": 4,
+   "maxH": 32,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR27",
+   "cat": "Formazione",
+   "name": "LEADERSHIP STRATEGICA",
+   "areas": [
+    "Management",
+    "Organizzazione"
+   ],
+   "modes": [
+    "online",
+    "indoor",
+    "outdoor",
+    "road"
+   ],
+   "minH": 4,
+   "maxH": 32,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR28",
+   "cat": "Formazione",
+   "name": "OKR STRATEGICI",
+   "areas": [
+    "Management",
+    "Organizzazione"
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 8,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR29",
+   "cat": "Formazione",
+   "name": "REMOTE MANAGEMENT",
+   "areas": [
+    "Management",
+    "Organizzazione"
+   ],
+   "modes": [
+    "online"
+   ],
+   "minH": 4,
+   "maxH": 8,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  },
+  {
+   "id": "TR30",
+   "cat": "Formazione",
+   "name": "RIUNIONI EFFICACI (on-line e in presenza)",
+   "areas": [
+    "Management",
+    "Organizzazione"
+   ],
+   "modes": [
+    "online",
+    "indoor"
+   ],
+   "minH": 4,
+   "maxH": 8,
+   "rates": {
+    "junior": 100,
+    "senior": 125,
+    "master": 175
+   }
+  }
+ ]
+}

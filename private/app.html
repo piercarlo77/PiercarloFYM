@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preventivi FYM</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <strong>FYM · Preventivi</strong>
+  <span class="grow"></span>
+  <span id="user" class="muted"></span>
+  <button id="logout" class="ghost">Esci</button>
+</header>
+
+<div class="layout">
+  <section class="editor">
+    <h2>1 · Cliente</h2>
+    <div class="grid2">
+      <label>Azienda<input id="c-company" autocomplete="off"></label>
+      <label>Referente<input id="c-contact" autocomplete="off"></label>
+      <label>Email referente<input id="c-email" type="email" autocomplete="off"></label>
+      <label>Oggetto del preventivo<input id="c-subject" autocomplete="off"></label>
+    </div>
+
+    <h2>2 · Servizi</h2>
+    <div id="lines"></div>
+    <button id="add" class="primary">+ Aggiungi servizio</button>
+
+    <h2>3 · Condizioni</h2>
+    <div class="grid2">
+      <label>Aliquota IVA %<input id="vat" type="number" min="0" max="100" step="1"></label>
+      <label>Validità (giorni)<input id="validity" type="number" min="1" max="365" step="1" value="30"></label>
+    </div>
+    <label>Note<textarea id="notes" rows="3" placeholder="Es.: spese di trasferta escluse, sede, date indicative…"></textarea></label>
+  </section>
+
+  <section class="preview">
+    <div class="actions">
+      <button id="print" class="primary">Stampa / Salva PDF</button>
+      <button id="copy" class="ghost">Copia riepilogo</button>
+      <button id="reset" class="ghost">Nuovo</button>
+    </div>
+    <article id="doc" class="doc"></article>
+  </section>
+</div>
+<script src="/app/app.js"></script>
+</body>
+</html>
